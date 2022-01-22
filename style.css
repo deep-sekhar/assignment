@@ -1,0 +1,128 @@
+body{
+    background-color: #F0F2F5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+/* title part  */
+
+.page-title{
+    flex:0.9;
+    min-width: 250px;
+    padding-left: 1rem;
+}
+
+.head{
+    font-size: 4rem;
+    color: #1F69F6;
+    font-weight: 750;
+}
+
+.page-title p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* box part  */
+
+.outerbox{
+    flex:1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.box{
+    width: 80%;
+    min-width: 320px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem 1rem 2rem 1rem;
+    border-radius: 1rem;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.box input{
+    padding: 0.5rem;
+    width: 80%;
+    border-radius: 0.2rem;
+    font-size: 1.5rem;
+    margin:0.3rem;
+    border:1px solid rgb(233, 225, 225);
+}
+
+.login_inp{
+    font-weight: 500;
+    text-align: center;
+    width: 80%;
+    font-size: 1.5rem;
+    margin:0.3rem;
+}
+
+#log_in{
+    white-space: nowrap;
+    color: white;
+    background-color: #1F69F6;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+#forgot_pw{
+    overflow: hidden;
+    white-space: nowrap;
+    color: #1F69F6;
+    background-color:white ;
+    width: min-content;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border-bottom: 1px solid rgb(233, 225, 225);
+}
+
+#create_new{
+    white-space: nowrap;
+    color: #ffffff;
+    background-color:#00C329 ;
+    width: min-content;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.bottom_text{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: auto;
+    margin-top: 0.7rem;
+    width: 80%;
+}
+
+/* media queeries  */
+
+@media only screen and (max-width:998px) {
+    .container{
+        margin-top: 8%;
+        transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width:295px) {
+    .container{
+        margin-top: 5%;
+        transform: scale(0.6);
+    }
+}
